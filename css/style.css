@@ -1,0 +1,401 @@
+body {
+    font-family: "Inter", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+@keyframes header {
+    0% {
+        content: 'D|';
+    }
+
+    2% {
+        content: 'De|';
+    }
+
+    4% {
+        content: 'Des|';
+    }
+
+    6% {
+        content: 'Desi|';
+    }
+
+    8% {
+        content: 'Desig|';
+    }
+
+    10% {
+        content: 'Design|';
+    }
+
+    12% {
+        content: 'Designe|';
+    }
+
+    14% {
+        content: 'Designer|';
+    }
+
+    16% {
+        content: 'Designe|';
+    }
+
+    18% {
+        content: 'Design|';
+    }
+
+    20% {
+        content: 'Desig|';
+    }
+
+    22% {
+        content: 'Desi|';
+    }
+
+    24% {
+        content: 'Des|';
+    }
+
+    26% {
+        content: 'De|';
+    }
+
+    28% {
+        content: 'D|';
+    }
+
+    30% {
+        content: 'D|';
+    }
+
+    32% {
+        content: 'De|';
+    }
+
+    34% {
+        content: 'Dev|';
+    }
+
+    36% {
+        content: 'Deve|';
+    }
+
+    38% {
+        content: 'Devel|';
+    }
+
+    40% {
+        content: 'Develo|';
+    }
+
+    42% {
+        content: 'Develop|';
+    }
+
+    44% {
+        content: 'Develope|';
+    }
+
+    46% {
+        content: 'Developer|';
+    }
+
+    48% {
+        content: 'Develope|';
+    }
+
+    50% {
+        content: 'Develop|';
+    }
+
+    52% {
+        content: 'Develo|';
+    }
+
+    54% {
+        content: 'Devel|';
+    }
+
+    56% {
+        content: 'Deve|';
+    }
+
+    58% {
+        content: 'Dev|';
+    }
+
+    60% {
+        content: 'De|';
+    }
+
+    62% {
+        content: 'D|';
+    }
+
+    64% {
+        content: 'F|';
+    }
+
+    66% {
+        content: 'Fr|';
+    }
+
+    68% {
+        content: 'Fre|';
+    }
+
+    70% {
+        content: 'Free|';
+    }
+
+    72% {
+        content: 'FreeL|';
+    }
+
+    74% {
+        content: 'FreeLa|';
+    }
+
+    76% {
+        content: 'FreeLan|';
+    }
+
+    78% {
+        content: 'FreeLanc|';
+    }
+
+    80% {
+        content: 'FreeLance|';
+    }
+
+    82% {
+        content: 'FreeLancer|';
+    }
+
+    84% {
+        content: 'FreeLance|';
+    }
+
+    86% {
+        content: 'FreeLanc|';
+    }
+
+    88% {
+        content: 'FreeLan|';
+    }
+
+    90% {
+        content: 'FreeLa|';
+    }
+
+    92% {
+        content: 'FreeL|';
+    }
+
+    94% {
+        content: 'Free|';
+    }
+
+    96% {
+        content: 'Fre|';
+    }
+
+    98% {
+        content: 'Fr|';
+    }
+
+    100% {
+        content: 'F|';
+    }
+
+}
+
+.logo {
+    font-size: 28px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.navbar {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9))
+    ;
+    z-index: 10;
+}
+
+.icon-arrow{
+    bottom: 2%;
+    right: 1%;
+    border-radius: 50%;
+    background-color: #0078FF;
+    position: fixed;
+    z-index: 20;
+    padding: 9px 13px;
+}
+.icon-arrow a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+@media (min-width : 992px) {
+    .navbar .active::before {
+        content: '';
+        width: 50px;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+    }
+    .hov-a:hover::after {
+        content: '';
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        position: absolute;
+        bottom: 0;
+        left: 5%;
+    }
+}
+
+.header {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/hero-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.header h1 {
+    text-align: center;
+    font-size: 72px;
+    line-height: 86px;
+}
+
+.anni::after {
+    content: '';
+    animation-name: header;
+    animation-duration: 7s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    font-size: 40px;
+    line-height: 60px;
+}
+
+section p {
+    color: rgb(78, 78, 78);
+}
+
+section .about .profile-content {
+    line-height: 24px;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+section .about .profile-info span {
+    font-size: 18px;
+    line-height: 26px;
+    color: rgb(30, 30, 30)
+}
+
+.profile-about h2::after,
+.contact h2::after{
+    content: '';
+    position: absolute;
+    height: 3px;
+    width: 100px;
+    left: 0;
+    bottom: -50%;
+    background-color: #0078FF;
+}
+
+
+.profile-about p ,
+.content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 30px;
+    color: rgb(78, 78, 78);
+}
+
+.i-hov {
+    transition: 0.5s;
+}
+
+.i-hov:hover {
+    color: white !important;
+    background-color: #0078FF !important;
+    border-color: #CDE1F8 !important;
+}
+
+.number {
+    background: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 120, 255, 0.5)), url(../img/counters-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.i-card{
+
+    padding: 5px 7px;
+    font-size: 20px;
+    border: 3px solid #0078FF;
+    border-radius: 50%;
+}
+
+.tittle::before{
+    content: '';
+    background-color: #0078FF;
+    position: absolute;
+    bottom: -20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 40px;
+    height: 4px;
+}
+
+.item img{
+    transition: 0.5s;
+}
+
+.item img:hover{
+    transform: scale(1.2);
+}
+.auther{
+    background: linear-gradient(rgba(0, 120, 255, 0.7), rgba(0, 120, 255, 0.7)), url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.btn-post::before{
+    content: 'Web Design';
+    position: absolute;
+    background-color: #0078FF;
+    color: white;
+    padding: 5px;
+    top: 0;
+    left: 50%;
+    transform: translate(-50% ,-50%);
+    font-size: 12px;
+    border-radius: 3px;
+}
+
+.contact{
+    background: linear-gradient(rgba(0, 120, 255, 0.5), rgba(0, 120, 255, 0.5)), url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.footer{
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 120, 255, 0.9)), url(../img/overlay-bg.jpg);
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+}
